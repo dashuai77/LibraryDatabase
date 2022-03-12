@@ -1,0 +1,21 @@
+Library (libraryID, name, address)
+
+Book (ISBN, title, price, pubDate, authorID)
+
+Author (authorID, Name, Address)
+
+Storage (libraryID, ISBN, qKeep, qSale)
+
+// Customer and Staff can be a same class
+Customer (CustomerID, pwd, name)
+
+CustomerPhone (CustomerID, phone#)
+PaymentMethod ( CustomerID,Account#)
+
+Staff (staffID, pwd, name) optional subclass: administrator ()
+
+
+Rent (Order#, customerID, ISBN, date, retdate, status)
+Purchase (Order#, customerID, ISBN, date)
+PickUp(Order#, ISBN, pickupTime, status)
+Deliver(Order#, address, deliverer(staffID), status)
