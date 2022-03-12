@@ -10,9 +10,9 @@ Storage (libraryID, ISBN, qKeep, qSale)
 Customer (CustomerID, pwd, name)
 
 CustomerPhone (CustomerID, phone#)
-PaymentMethod ( CustomerID,Account#)
+PaymentMethod (CustomerID,Account#)
 
-Staff (staffID, pwd, name) optional subclass: administrator ()
+Staff (staffID, pwd, name, Salary) optional subclass: administrator ()
 
 
 Rent (Order#, customerID, ISBN, date, retdate, status)
@@ -21,3 +21,5 @@ PickUp(Order#, ISBN, pickupTime, status)
 Deliver(Order#, address, deliverer(staffID), status)
 
 Request (ReqID, CustomerID, ISBN, libraryID)
+
+Honesty (CustomerID, lateTime, lateDay, borrowTime, borrowDate)
