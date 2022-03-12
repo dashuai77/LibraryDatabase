@@ -19,3 +19,5 @@ Rent (Order#, customerID, ISBN, date, retdate, status)
 Purchase (Order#, customerID, ISBN, date)
 PickUp(Order#, ISBN, pickupTime, status)
 Deliver(Order#, address, deliverer(staffID), status)
+
+Request (ReqID, CustomerID, ISBN, libraryID)
