@@ -4,7 +4,7 @@ Book (ISBN, title, price, pubDate, authorID)
 
 Author (authorID, Name, Address)
 
-Storage (libraryID, ISBN, qKeep, qSale)
+Storage (libraryID, ISBN, qKeep, qRent, qSale)
 
 // Customer and Staff can be a same class
 Customer (CustomerID, pwd, name)
