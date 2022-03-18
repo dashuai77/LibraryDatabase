@@ -16,8 +16,8 @@ Staff (staffID, pwd, name, Salary) optional subclass: administrator ()
 
 
 Rent (Order#, customerID, ISBN, date, retdate, status)
-Purchase (Order#, customerID, ISBN, date)
-PickUp(Order#, ISBN, pickupTime, status)
+Purchase (Order#, customerID, ISBN, date, staffID)
+PickUp(Order#, ISBN, pickupTime, status, staffID)
 Deliver(Order#, address, deliverer(staffID), status)
 
 Request (ReqID, CustomerID, ISBN, libraryID)
