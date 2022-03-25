@@ -1,0 +1,68 @@
+Library (libraryID, libraryName, libraryAddress)
+Primary Key: libraryID
+
+Book (ISBN, bookTitle, pubDate, price, authorID)
+Primary Key: ISBN
+Foreign Key: authorID refers Author.authorID
+
+Author (authorID, Name, Address)
+Primary Key: authorID
+
+Customer (CustomerID, pwd, name)
+Primary Key: CustomerID
+
+Honesty (customerID, lateTime, lateDay, borrowTime, borrowDate)
+Primary key: customerID
+Foreign key: customerID refers Customer.customerID
+
+CustomerPhone (phoneNum, customerID)
+Primary key: phoneNum
+Foreign key: customerID refers Customer.customerID
+
+PaymentMethod (accountNum, customerID)
+Primary key: accountNum
+Foreign key: customerID refers Customer.customerID
+
+Purchase (order#, date, customerID, ISBN, staffID)
+Primary key: orderNum
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+Foreign key: staffID refers Staff.staffID
+
+PickUp(orderNum, pickupTime, status, date, customerID, ISBN, staffID)
+Primary key: orderNum
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+Foreign key: staffID refers Staff.staffID
+
+Deliver(orderNum, address, status, date, customerID, ISBN, staffID)
+Primary key: orderNum
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+Foreign key: staffID refers Staff.staffID
+
+Staff (staffID, pwd, name, Salary) administrator ()
+Primary key: orderNum
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+Foreign key: staffID refers Staff.staffID
+
+Administrator (staffID)
+Primary key: staffID
+Foreign key: staffID refers Staff.staffID
+
+Storage (libraryID, ISBN, qKeep, qSale)
+Primary key: libraryID, ISBN
+Foreign key: libraryID refers Library.libraryID
+Foreign key: ISBN refers Book.ISBN
+
+Rent (orderNum, rentDate, returnDate, status, customerID, ISBN)
+Primary Key: orderNum
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+
+Request (ReqID, CustomerID, ISBN, libraryID)
+Primary Key: requestID
+Foreign key: customerID refers Customer.customerID
+Foreign key: ISBN refers Book.ISBN
+Foreign key: libraryID refers Library.libraryID
