@@ -5,7 +5,8 @@ create table library(
  
 create table Author(
  authorID int(3) primary key,
- authorName varchar(10),
+ authorFName varchar(12),
+ authorLName varchar(12),
  authorAddress varchar(30));
  
 create table Book(
@@ -18,7 +19,8 @@ create table Book(
  
 Create table Customer(
  customerID int(4) primary key,
- customerName varchar(10);
+ customerFName varchar(12);
+ customerLName varchar(12);
  
 create table CustomerPhone(
  phoneNum int(15) primary key,
@@ -32,7 +34,8 @@ create table PaymentMethod(
  
 create table staff(
  staffID int(3) primary key,
- staffName varchar(20),
+ staffFName varchar(12),
+ staffLName varchar(12),
  salary float(3,2);
  
 create table Purchase(
