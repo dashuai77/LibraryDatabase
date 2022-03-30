@@ -47,7 +47,7 @@ Primary key: libraryID, ISBN
 Foreign key: libraryID refers Library.libraryID
 Foreign key: ISBN refers Book.ISBN
 
-Rent (orderNum, rentDate, returnDate, status, lateDate, customerID, ISBN)
+Rent (orderNum, ISBN, customerID, status, rentDate, returnDate, lateDate)
 Primary Key: orderNum
 Foreign key: customerID refers Customer.customerID
 Foreign key: ISBN refers Book.ISBN
