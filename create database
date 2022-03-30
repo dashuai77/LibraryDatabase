@@ -13,7 +13,7 @@ create table Book(
  ISBN int(10) primary key,
  booktitle varchar(20),
  pubDate date,
- price int(3),
+ price  float(3,2),
  authorID int(3),
  foreign key(authorID) references Author(authorID));
  
