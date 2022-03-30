@@ -1,13 +1,13 @@
 create table library(
  libraryID int(3) primary key not null,
  libraryName varchar(20) not null,
- libraryAddress varchar(30) not null);
+ libraryAddress varchar(50) not null);
  
 create table Author(
  authorID int(3) primary key,
  authorFName varchar(12),
  authorLName varchar(12),
- authorAddress varchar(30));
+ authorAddress varchar(50));
  
 create table Book(
  ISBN int(10) primary key,
@@ -57,7 +57,7 @@ create table PickUp(
  
 create table Deliver(
  orderNum int(3) primary key,
- address varchar(20),
+ address varchar(50),
  status varchar(10),
  staffID int(3),
  foreign key (staffID) references staff(staffID));
