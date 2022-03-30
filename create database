@@ -11,7 +11,7 @@ create table Author(
  
 create table Book(
  ISBN int(10) primary key,
- booktitle varchar(20),
+ booktitle varchar(50),
  pubDate date,
  price  float(3,2),
  authorID int(3),
