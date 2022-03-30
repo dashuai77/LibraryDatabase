@@ -11,10 +11,6 @@ Primary Key: authorID
 Customer (CustomerID,name)
 Primary Key: CustomerID
 
-Honesty (customerID, lateTime, lateDay, borrowTime, borrowDate)*
-Primary key: customerID
-Foreign key: customerID refers Customer.customerID
-
 CustomerPhone (phoneNum, customerID)
 Primary key: phoneNum
 Foreign key: customerID refers Customer.customerID
