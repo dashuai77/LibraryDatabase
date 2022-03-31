@@ -1,0 +1,20 @@
+Customer function
+  1. Look up library with name
+  2. Search book with specific ISBN
+  3. Search book with keyword from book title
+  4. Search book from specific author
+  5. Display user's name, phone number, and payment method
+  6. Update phone number (edit & new)
+  7. Update payment method (edit & new)
+  8. Request specific book at specific library
+
+Staff function
+  1. Open purchase order for a customer (insert data into purchase and pickup/deliver table)
+  2. Edit status of pickup/deliver with given order number
+  3. Generate list of avaliable book given the libraryID
+  4. Add line/update rent table
+  5. Update lateDate column of rent table
+  6. List all out of date renting
+  7. Check list of request that qkeep for the requested book in the requested library is 0
+  8. Show the administrator given the libraryID
+  9. Update storage (qKeep, qSale)
