@@ -41,9 +41,9 @@ create table staff(
 create table Purchase(
  orderNum int(4) primary key,
  ISBN int(10),
- date datetime,
  customerID int(4),
  staffID int(3),
+ date datetime,
  foreign key (ISBN) references Book(ISBN),
  foreign key (customerID) references Customer(customerID),
  foreign key (staffID) references staff(staffID));
@@ -78,13 +78,13 @@ create table Storage(
  foreign key (ISBN) references Book(ISBN));
  
 create table Rent(
- orderNum int(3) primary key,
+ orderNum int(4) primary key,
  ISBN int(10),
  customerID int(3),
  status varchar(10),
  rentDate date,
  returnDate date,
- lateDate date,
+ lateDate int(3),
  foreign key (customerID) references Customer(customerID),
  foreign key (ISBN) references Book(ISBN));
  
