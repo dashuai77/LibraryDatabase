@@ -36,7 +36,7 @@ create table staff(
  staffID int(3) primary key,
  staffFName varchar(12),
  staffLName varchar(12),
- salary float(3,2);
+ salary int(5);
  
 create table Purchase(
  orderNum int(4) primary key,
